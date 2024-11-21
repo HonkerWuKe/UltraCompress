@@ -1,102 +1,409 @@
-# 极限压缩工具 / Ultimate Compression Tool / Инструмент Сжатия / अल्टीमेट कंप्रेशन टूल
+# 极限压缩工具 | Ultimate Compression Tool
 
-[简体中文](#简体中文) | [English](#english) | [Русский](#русский) | [हिंदी](#हिंदी)
+[简体中文](#简体中文) | [English](#english)
 
 ## 简体中文
 
-### 简介
-极限压缩工具是一个基于Python开发的图形界面压缩软件，使用7z算法进行高效压缩。它提供了简单直观的界面，支持文件和文件夹的压缩，并且允许用户自定义压缩参数。
+### 软件介绍
+极限压缩工具是一个专业的文件压缩软件，采用先进的压缩算法，提供从快速压缩到极限压缩的全方位解决方案。软件界面直观友好，同时提供丰富的高级功能，满足不同用户的压缩需求。
 
-### 主要特性
-- 图形化界面，操作简单直观
-- 支持文件和文件夹压缩
-- 自定义字典大小和线程数
-- 实时压缩进度显示
-- 详细的压缩信息统计（压缩比、耗时等）
-- 自动建议输出路径
+### 核心功能
+* 🚀 **多级压缩模式**
+  - 6种压缩级别可选
+  - 从无损打包到极限压缩
+  - 智能压缩建议
+  - 自适应压缩策略
 
-### 使用说明
-1. 选择输入文件/文件夹
-2. 选择输出路径（默认与输入文件同目录）
-3. 设置压缩参数：
-   - 字典大小：建议256-4096MB，不超过物理内存的1/3
-   - 线程数：建议设置为CPU核心数
-4. 点击"开始压缩"即可
+* 💻 **智能资源管理**
+  - 自动调节CPU使用
+  - 内存占用优化
+  - 磁盘I/O控制
+  - 后台任务支持
+
+* 🔐 **安全加密功能**
+  - AES-256加密算法
+  - 密码强度检测
+  - 文件名加密选项
+  - 加密性能优化
+
+* 📊 **实时性能监控**
+  - CPU/内存使用率
+  - 压缩速度监测
+  - 剩余时间预测
+  - 性能数据图表
+
+* 🎯 **智能压缩建议**
+  - 文件类型分析
+  - 最优参数推荐
+  - 性能瓶颈提示
+  - 优化方案建议
+
+* 🛠 **高级功能设置**
+  - 字典大小调整
+  - 固实压缩选项
+  - 分卷压缩设置
+  - 文件过滤规则
+
+### 压缩级别详解
+
+#### STORE（存储模式）
+* 压缩比：0%
+* CPU占用：最低
+* 速度：极快
+* 适用场景：
+  - 图片、视频等已压缩文件
+  - 需要快速打包的场合
+  - 加密文件但不需压缩
+  - 对CPU性能要求极低时
+
+#### FASTEST（最快模式）
+* 压缩比：10-20%
+* CPU占用：低
+* 速度：非常快
+* 适用场景：
+  - 临时文件压缩
+  - 大量小文件打包
+  - 需要快速压缩
+  - 对压缩比要求不高时
+
+#### FAST（快速模式）
+* 压缩比：20-40%
+* CPU占用：中低
+* 速度：较快
+* 适用场景：
+  - 日常文件备份
+  - 普通文档压缩
+  - 一般存储需求
+  - 平衡速度和压缩比
+
+#### NORMAL（标准模式）
+* 压缩比：40-60%
+* CPU占用：中等
+* 速度：中等
+* 适用场景：
+  - 推荐日常使用
+  - 常规文件压缩
+  - 需要平衡性能
+  - 大多数使用场景
+
+#### MAXIMUM（最大压缩）
+* 压缩比：60-70%
+* CPU占用：高
+* 速度：较慢
+* 适用场景：
+  - 长期存储文件
+  - 需要高压缩比
+  - 网络传输优化
+  - 存储空间受限
+
+#### ULTRA（极限压缩）
+* 压缩比：70-80%
+* CPU占用：极高
+* 速度：最慢
+* 适用场景：
+  - 追求极限压缩比
+  - 纯文本文件压缩
+  - 特殊存储需求
+  - 不考虑压缩时间
+
+### 系统要求
+
+#### 最低配置
+* 操作系统：Windows 7 SP1 (64位)
+* 处理器：双核心处理器
+* 内存：4GB RAM
+* 存储空间：100MB可用空间
+* Python版本：3.6+
+
+#### 推荐配置
+* 操作系统：Windows 10/11 (64位)
+* 处理器：四核心及以上
+* 内存：8GB RAM及以上
+* 存储设备：SSD
+* Python版本：3.8+
+
+### 优化建议
+
+#### 性能优化
+1. **提升压缩速度**
+   * 降低压缩级别
+   * 减少线程数
+   * 使用SSD存储
+   * 关闭不必要程序
+
+2. **提高压缩比**
+   * 提升压缩级别
+   * 增大字典大小
+   * 启用固实压缩
+   * 优化文件排序
+
+3. **降低内存占用**
+   * 减小字典大小
+   * 降低线程数
+   * 使用分卷压缩
+   * 限制任务队列
+
+#### 使用建议
+1. **文件类型选择**
+   * 文本文件：MAXIMUM/ULTRA
+   * 图片视频：STORE
+   * 可执行文件：NORMAL
+   * 办公文档：FAST/NORMAL
+
+2. **参数设置**
+   * 字典大小：可用内存的1/3
+   * 线程数：CPU核心数-1
+   * 分卷大小：根据传输需求
+   * 缓冲大小：根据可用内存
+
+### 常见问题解答
+
+#### 1. 压缩速度问题
+Q：为什么压缩速度很慢？
+* 可能原因：
+  - 压缩级别过高
+  - 系统资源不足
+  - 硬盘速度限制
+  - 文件过于碎片化
+* 解决方案：
+  - 降低压缩级别
+  - 关闭其他程序
+  - 使用SSD存储
+  - 定期整理磁盘
+
+#### 2. 内存占用问题
+Q：如何解决内存不足？
+* 可能原因：
+  - 字典大小设置过大
+  - 同时压缩多个文件
+  - 系统内存不足
+  - 内存泄漏
+* 解决方案：
+  - 降低字典大小
+  - 减少并行任务
+  - 使用分卷压缩
+  - 重启软件
+
+#### 3. 压缩文件损坏
+Q：如何避免文件损坏？
+* 预防措施：
+  - 开启验证功能
+  - 使用可靠存储
+  - 定期备份
+  - 避免中断压缩
+* 解决方法：
+  - 使用修复功能
+  - 重新压缩
+  - 检查源文件
+  - 更换存储设备
+
+### 技术支持
+
+#### 联系方式
+* 官方网站：[website]
+
+#### 使用协议
+* 开源协议：MIT
 
 ## English
 
 ### Introduction
-Ultimate Compression Tool is a GUI-based compression software developed in Python using the 7z algorithm. It provides a simple and intuitive interface for compressing files and folders with customizable compression parameters.
+Ultimate Compression Tool is a professional file compression software that utilizes advanced compression algorithms to provide comprehensive solutions from quick compression to ultimate compression. The software features an intuitive interface while offering rich advanced functions to meet various compression needs.
 
-### Key Features
-- User-friendly graphical interface
-- Support for both file and folder compression
-- Customizable dictionary size and thread count
-- Real-time compression progress
-- Detailed compression statistics (compression ratio, time taken, etc.)
-- Automatic output path suggestion
+### Core Features
+* 🚀 **Multi-level Compression**
+  - 6 compression levels available
+  - From lossless packing to extreme compression
+  - Intelligent compression suggestions
+  - Adaptive compression strategies
 
-### Usage
-1. Select input file/folder
-2. Choose output path (defaults to same directory as input)
-3. Set compression parameters:
-   - Dictionary size: recommended 256-4096MB, not exceeding 1/3 of physical memory
-   - Thread count: recommended to match CPU core count
-4. Click "Start Compression"
+* 💻 **Smart Resource Management**
+  - Automatic CPU usage adjustment
+  - Memory usage optimization
+  - Disk I/O control
+  - Background task support
 
-## Русский
+* 🔐 **Security Encryption**
+  - AES-256 encryption algorithm
+  - Password strength detection
+  - Filename encryption option
+  - Encryption performance optimization
 
-### Введение
-Инструмент Сжатия - это программное обеспечение для сжатия файлов с графическим интерфейсом, разработанное на Python с использованием алгоритма 7z. Программа предоставляет простой и интуитивно понятный интерфейс для сжатия файлов и папок с настраиваемыми параметрами.
+* 📊 **Real-time Monitoring**
+  - CPU/Memory usage
+  - Compression speed monitoring
+  - Remaining time prediction
+  - Performance data charts
 
-### Основные функции
-- Удобный графический интерфейс
-- Поддержка сжатия файлов и папок
-- Настраиваемый размер словаря и количество потоков
-- Отображение прогресса сжатия в реальном времени
-- Подробная статистика сжатия (коэффициент сжатия, затраченное время и т.д.)
-- Автоматическое предложение пути вывода
+* 🎯 **Smart Suggestions**
+  - File type analysis
+  - Optimal parameter recommendations
+  - Performance bottleneck alerts
+  - Optimization suggestions
 
-### Использование
-1. Выберите входной файл/папку
-2. Выберите путь вывода (по умолчанию - та же директория)
-3. Установите параметры сжатия:
-   - Размер словаря: рекомендуется 256-4096МБ, не более 1/3 физической памяти
-   - Количество потоков: рекомендуется соответствие количеству ядер процессора
-4. Нажмите "Начать сжатие"
+* 🛠 **Advanced Settings**
+  - Dictionary size adjustment
+  - Solid compression options
+  - Volume splitting settings
+  - File filtering rules
 
-## हिंदी
+### Compression Levels
 
-### परिचय
-अल्टीमेट कंप्रेशन टूल एक Python में विकसित GUI-आधारित कंप्रेशन सॉफ्टवेयर है जो 7z एल्गोरिथम का उपयोग करता है। यह फ़ाइलों और फ़ोल्डरों को कस्टमाइज़ करने योग्य कंप्रेशन पैरामीटर के साथ कंप्रेस करने के लिए एक सरल और सहज इंटरफ़ेस प्रदान करता है।
+#### STORE Mode
+* Compression Ratio: 0%
+* CPU Usage: Minimal
+* Speed: Ultra Fast
+* Best For:
+  - Already compressed files (images/videos)
+  - Quick packaging needs
+  - Encrypted files without compression
+  - Minimal CPU usage requirement
 
-### मुख्य विशेषताएं
-- उपयोगकर्ता-अनुकूल ग्राफिकल इंटरफेस
-- फ़ाइल और फ़ोल्डर कंप्रेशन के लिए समर्थन
-- कस्टमाइज़ करने योग्य डिक्शनरी साइज और थ्रेड काउंट
-- रीयल-टाइम कंप्रेशन प्रगति
-- विस्तृत कंप्रेशन आंकड़े (कंप्रेशन अनुपात, लगा समय, आदि)
-- स्वचालित आउटपुट पाथ सुझाव
+#### FASTEST Mode
+* Compression Ratio: 10-20%
+* CPU Usage: Low
+* Speed: Very Fast
+* Best For:
+  - Temporary file compression
+  - Multiple small files
+  - Quick compression needs
+  - Low compression ratio requirements
 
-### उपयोग
-1. इनपुट फ़ाइल/फ़ोल्डर चुनें
-2. आउटपुट पाथ चुनें (डिफ़ॉल्ट रूप से इनपुट के समान डायरेक्टरी)
-3. कंप्रेशन पैरामीटर सेट करें:
-   - डिक्शनरी साइज: 256-4096MB की सिफारिश, भौतिक मेमोरी के 1/3 से अधिक नहीं
-   - थ्रेड काउंट: CPU कोर काउंट के अनुरूप सिफारिश
-4. "कंप्रेशन शुरू करें" पर क्लिक करें
+#### FAST Mode
+* Compression Ratio: 20-40%
+* CPU Usage: Medium-Low
+* Speed: Fast
+* Best For:
+  - Daily file backups
+  - Regular document compression
+  - General storage needs
+  - Balance between speed and ratio
 
----
+#### NORMAL Mode
+* Compression Ratio: 40-60%
+* CPU Usage: Medium
+* Speed: Medium
+* Best For:
+  - Recommended for daily use
+  - Regular file compression
+  - Balanced performance needs
+  - Most use cases
 
-## 技术要求 / Technical Requirements / Технические требования / तकनीकी आवश्यकताएं
+#### MAXIMUM Mode
+* Compression Ratio: 60-70%
+* CPU Usage: High
+* Speed: Slow
+* Best For:
+  - Long-term file storage
+  - High compression ratio needs
+  - Network transfer optimization
+  - Limited storage space
 
-### 依赖项 / Dependencies / Зависимости / निर्भरताएं
-- Python 3.6+
-- py7zr
-- tkinter
+#### ULTRA Mode
+* Compression Ratio: 70-80%
+* CPU Usage: Very High
+* Speed: Slowest
+* Best For:
+  - Maximum compression ratio
+  - Text file compression
+  - Special storage needs
+  - No time constraints
 
-### 安装依赖 / Install Dependencies / Установка зависимостей / निर्भरताएं इंस्टॉल करें
+### System Requirements
 
-```bash
-    pip install py7zr
-```
+#### Minimum Requirements
+* OS: Windows 7 SP1 (64-bit)
+* CPU: Dual-core processor
+* RAM: 4GB
+* Storage: 100MB free space
+* Python: 3.6+
+
+#### Recommended Specifications
+* OS: Windows 10/11 (64-bit)
+* CPU: Quad-core or better
+* RAM: 8GB or more
+* Storage: SSD
+* Python: 3.8+
+
+### Optimization Guide
+
+#### Performance Optimization
+1. **Improve Compression Speed**
+   * Lower compression level
+   * Reduce thread count
+   * Use SSD storage
+   * Close unnecessary programs
+
+2. **Increase Compression Ratio**
+   * Increase compression level
+   * Enlarge dictionary size
+   * Enable solid compression
+   * Optimize file ordering
+
+3. **Reduce Memory Usage**
+   * Decrease dictionary size
+   * Lower thread count
+   * Use volume splitting
+   * Limit task queue
+
+#### Usage Recommendations
+1. **File Type Selection**
+   * Text files: MAXIMUM/ULTRA
+   * Images/Videos: STORE
+   * Executables: NORMAL
+   * Office documents: FAST/NORMAL
+
+2. **Parameter Settings**
+   * Dictionary size: 1/3 of available RAM
+   * Thread count: CPU cores-1
+   * Volume size: Based on transfer needs
+   * Buffer size: Based on available memory
+
+### FAQ
+
+#### 1. Compression Speed Issues
+Q: Why is compression slow?
+* Possible causes:
+  - High compression level
+  - Insufficient system resources
+  - Hard drive limitations
+  - File fragmentation
+* Solutions:
+  - Lower compression level
+  - Close other programs
+  - Use SSD storage
+  - Defragment disk
+
+#### 2. Memory Usage Issues
+Q: How to resolve memory insufficiency?
+* Possible causes:
+  - Large dictionary size
+  - Multiple concurrent compressions
+  - Insufficient system memory
+  - Memory leaks
+* Solutions:
+  - Reduce dictionary size
+  - Limit parallel tasks
+  - Use volume splitting
+  - Restart software
+
+#### 3. Compressed File Corruption
+Q: How to prevent file corruption?
+* Preventive measures:
+  - Enable verification
+  - Use reliable storage
+  - Regular backups
+  - Avoid interrupting compression
+* Solutions:
+  - Use repair function
+  - Recompress files
+  - Check source files
+  - Change storage device
+
+### Technical Support
+
+#### Contact Information
+* Official Website: [website]
+
+#### License
+* Open Source License: MIT
